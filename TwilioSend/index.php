@@ -28,7 +28,8 @@ $client->messages->create(
     )
 );
     
-    echo "Sent message!"
+    echo "Sent message!";
+    echo "hello"
     
     ?>
     
