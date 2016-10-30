@@ -1,93 +1,46 @@
-<!DOCTYPE html>
-<html>
-    <body>
 
-        <?php
+
+<?php
 
 /* Include twilio-php, the official Twilio PHP Helper Library,
  * which can be found at 
  * http://www.twilio.com/docs/libraries
  */ 
 
-include('Services/Twilio.php'); 
+require __DIR__ . '/vendor/autoload.php';
+        use Twilio\Rest\Client; 
 
+/* Controller: Match the keyword with the customized message reply. */
 
-require __DIR__ . '/twilio-php-master/Twilio/autoload.php';
-
-use Twilio\Rest\Client;
-        
-$sid = 'ACd70778ffdda321fbe9257c5325eccb52';
-$twisid='MG1e8f58fca93ffc25d449e30e43b02674';
-$token = '
-662df492ede76973cbf937e9502051f5
-';
-$client = new Client($sid, $token);
-
-/* Controller: Match the keyword with the customized SMS reply. */
-
-function indexUSA(){
-    $client->account->messages->create(array(  
-	'From' => "+19173830135", 
-        'Body' => "Reply with 'help haiti' to get a list of Haitian-led organizations."
-));
-//   $response = new Services_Twilio_Twiml();
-//   $response->sms("Reply with 'help haiti' to get a list of Haitian-led organizations.");
+//function indexUSA(){
+//   $response = $response = new Twilio\Twiml();
+//   $response->message("Text Help Haiti to get a list of Haitian-led organizations, or organizations with a great track record in Haiti.");
 //   echo $response;
+//} 
+
+function indexAYITI(){ 
+    $response = $response = new Twilio\Twiml();
+    $response->message("Text the type of help you need and the name of your city. Ex) 'manje jeremie' or 'medikaman pap' to get back an address and phone number of an organization."); //needs kreyol translation
+    echo $response;
 } 
-        
-function indexHAITI(){
-    $response = new Services_Twilio_Twiml();
-    $response->sms("Reply with the kind of help you need (medikaman, manje) and the name of your city. 'Egzanp: medikaman port-au-prince.'");
+
+function index(){
+    
+    $response = $response = new Twilio\Twiml();
+    $response->message("Text Help Haiti to get a list of Haitian-led organizations, or organizations with a great track record in Haiti. || Text the type of help you need and the name of your city. Ex) 'manje jeremie' or 'medikaman pap' to get back an address and phone number of an organization."); //needs kreyol translation
+    echo $response;
     
 }
 
-function charity(){ 
-    $response = new Services_Twilio_Twiml();
-    $response->sms("Gaskov Clerge Foundation
-Medical Missions, Emergency Relief
-www.gaskov.org
-info@gaskov.org
-561-510-1113
-
-Lambi Fund
-Community enrichment, Women’s rights, Education, Emergency Relief
-www.lambifund.org
-info@lambifund.com
-202-772-2372
-
-Sow A Seed
-Arts and Recreation, Education, Health/Nutrition, Shelter, Emergency Relief
-www.sowaseedonline.org
-info@sowaseedonline.org
-786-220-0821
-
-Haiti Communitere
-Community Engagement, Emergency Relief
-www.haiti.communitere.org  
-    "); 
+function med(){
+    $response = $response = new Twilio\Twiml();
+    $response->message("Medecins sans Frontieres\nDrouillard Hospital\nCite Soleil\n+509XXXXXXXX\n"); 
     echo $response;
 } 
 
-function medPap(){
-    $response = new Services_Twilio_Twiml();
-    $response->sms("Haiti Communitere
-    19 Rue Pelican, Port-au-Prince
-    +509 37 53 1771
-    "); 
-    echo $response;
-} 
-        
-function medCite(){
-    $response = new Services_Twilio_Twiml();
-    $response->sms("Medecins sans Frontieres (MSF)
-Hopital Drouillard
-Cite Soleil, PAP");
-    echo $response;
-}
-
-function food(){ 
-    $response = new Services_Twilio_Twiml(); 
-    $response->sms("Pigeon. A stout seed- or fruit-eating bird with a small head, short legs, and a cooing voice, typically having gray and white plumage."); 
+function manje(){ 
+    $response = $response = new Twilio\Twiml(); 
+    $response->message("Oganizasyon01\nRue Yon Bagay Adres 01\n+509XXXXXXXX"); 
     echo $response; 
 }
 
@@ -101,48 +54,65 @@ $body = $_REQUEST['Body'];
 $result = preg_replace("/[^A-Za-z0-9]/u", " ", $body); 
 $result = trim($result); 
 $result = strtolower($result); 
-  
-/* keywords */
-$food = "manje";
-$medicine = "medikaman";
-$shelter = "abri";
-        
-
 
 /* Router: Match the ‘Body’ field with index of keywords */ 
 
+
+
+
 switch ($result) { 
     case 'help haiti': 
-        charity(); 
+        //function
+        {
+        $n = rand(0, 3);
+        switch($n){
+            case 0: 
+                $response = $response = new Twilio\Twiml(); 
+                $response->message("Gaskov Clerge Foundation\nMedical Missions, Emergency Relief\nwww.gaskov.org\ninfo@gaskov.org\n561-510-1113"); 
+                echo $response;
+                break;
+                    
+            case 1:
+                $response = $response = new Twilio\Twiml(); 
+                $response->message("Lambi Fund\nCommunity enrichment, Women’s rights, Education, Emergency Relief\nwww.lambifund.org\ninfo@lambifund.com\n202-772-2372"); 
+                echo $response;
+                break;
+                
+            case 2:
+                $response = $response = new Twilio\Twiml(); 
+                $response->message("Sow A Seed\nArts and Recreation, Education, Health/Nutrition, Shelter, Emergency Relief\nwww.sowaseedonline.org\ninfo@sowaseedonline.org\n786-220-0821"); 
+                echo $response;
+                break;
+                
+            case 3:
+                $response = $response = new Twilio\Twiml(); 
+                $response->message("Haiti Communitere\nCommunity Engagement, Emergency Relief (on the ground)\nwww.haiti.communitere.org"); 
+                echo $response; 
+                break;
+            }
+        }
+        break;
+    case 'alo': 
+        indexAYITI(); 
         break; 
-    case 'helphaiti': 
-        charity(); 
-        break; 
-    case $food + 'pap': 
-        food(); 
-        break; 
-    case $food + 'port au prince': 
-        food(); 
-        break; 
-    case $medicine + 'pap':
-        med();
-        break
-    case $medicine + 'cite soleil':
-        medCite();
-        break
-    case $medicine + 'pap':
-        medCite();
-        break
-    case $medicine + 'port au prince':
-        medCite();
-        break
+    case 'hello': 
+        indexAYITI(); 
+        break;
+    case 'ede': 
+        indexAYITI(); 
+        break;
+    case 'medikaman pap': 
+        med(); 
+        break;
+    case 'manje jeremie': 
+        manje(); 
+        break;
     /* Optional: Add new routing logic above this line. */ 
     default: 
-        indexUSA(); 
+        index(); 
 }
 
-        echo "Hello, the test worked!"
+    
+?>
 
-    </body>
 
-</html>
