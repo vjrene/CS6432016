@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="themes/mobile.css"/>
+        <link rel="stylesheet" href="themes/CS643.css"/>
+        <link rel="stylesheet" href="themes/CS643.min.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="app.js"></script>
+        <title>Mobile Education Project</title>
+    </head>
+    <style type="text/css">
+        .ui-icon-usaicon{
+            background-image: url("images/flags/usa.png");
+        }
+        .ui-icon-philicon{
+            background-image: url("images/flags/philipines.png");
+        }
+        .ui-icon-columbiaicon{
+            background-image: url("images/flags/columbia.png");
+        }
+    </style>
+    <body>
+        
+<!-- BIOLOGY ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="pageone">
+            <div data-role="header">
+                <h1>Biology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                <li><a href="#physiology"><img src="images/Grad_Physiology_Icon.png">Physiology</a></li>
+                <li><a href="#genetics"><img src="images/Biochemistry-512.png">Genetics</a></li>
+                <li><a href="#cellbio"><img src="images/Human_Cell-512.png">Cell Biology</a></li>
+                <li><a href="#micro"><img src="images/microscope-512.png">Microbiology</a></li>
+                    
+                </ul>
+            </div>
+            <div data-role = "footer">
+                 <p class="icons">
+                    <a href="#pageone" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+<!-- BIOLOGY SPANISH PAGE -->
+        <div data-role="page" data-theme="d" id="biospan">
+            <div data-role="header">
+                <h1>Biología</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                <li><a href="#physiology"><img src="images/Grad_Physiology_Icon.png">Fisiología</a></li>
+                <li><a href="#genetics"><img src="images/Biochemistry-512.png">Genética</a></li>
+                <li><a href="#cellbio"><img src="images/Human_Cell-512.png">Celda Biología</a></li>
+                <li><a href="#micro"><img src="images/microscope-512.png">Microbiología</a></li>
+                    
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pageone" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+                
+            </div>
+        </div>        
+        
+<!-- ORGANIC CHEM ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="pagetwo">
+            <div data-role="header">
+                <h1>Organic Chemistry</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#rxneng"><img src="images/namethatrxn.png">Name that Reaction</a></li>
+                    <li><a href=""><img src="images/apple-touch-icon@2.png">Subsitution Reaction</a></li>
+                    <li><a href=""><img src="images/organic-chemistry-science-education-badge-logo-512.png">Elmination Reaction</a></li>
+                    <li><a href="#alkeng"><img src="images/alkene1.jpg">Alkene Reaction</a></li>
+                    <li><a href="#alkyneeng"><img src="images/alkyne.gif">Alkyne Reaction</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagetwo" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+<!-- ORGANIC CHEM SPANISH PAGE -->
+        <div data-role="page" data-theme="d" id="chemspan">
+            <div data-role="header">
+                <h1>Química</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#rxneng"><img src="images/namethatrxn.png">Reacción</a></li>
+                    <li><a href=""><img src="images/apple-touch-icon@2.png">Susitución Reacción</a></li>
+                    <li><a href=""><img src="images/organic-chemistry-science-education-badge-logo-512.png">Elminación Reacción</a></li>
+                    <li><a href="#alkeng"><img src="images/alkene1.jpg">Alkene Reacción</a></li>
+                    <li><a href="#alkyneeng"><img src="images/alkyne.gif">Alkyne Reacción</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagetwo" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>        
+        
+<!-- ASTRONOMY ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="pagethree">
+            <div data-role="header">
+                <h1>Astronomy</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#solarsys"><img src="images/astro/solar-icon.png">Our Solar System</a></li>
+                    <li><a href=""><img src="images/astro/earth.png">Our Planet</a></li>
+                    <li><a href="#moon"><img src="images/astro/moon.png">Phases of the Moon</a></li>
+                    <li><a href="#spacestation"><img src="images/astro/astro.png">Life in a Space Station</a></li>
+                    <li><a href="#stars"><img src="images/astro/constellation.png">Constellations</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagethree" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astronomytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astrospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+<!-- ASTRONOMY SPANISH -->
+        <div data-role="page" data-theme="d" id="astrospan">
+            <div data-role="header">
+                <h1>Astronomía</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#solarsys"><img src="images/astro/solar-icon.png">Nuestra Sistema Solar</a></li>
+                    <li><a href=""><img src="images/astro/earth.png">Nuestra Planeta</a></li>
+                    <li><a href="#moonspan"><img src="images/astro/moon.png">Fases de la luna</a></li>
+                    <li><a href="#spacespan"><img src="images/astro/astro.png">La vida en una estación espacial</a></li>
+                    <li><a href="#starspan"><img src="images/astro/constellation.png">Constelaciones</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagethree" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astronomytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astrospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- ASTRONOMY TAG -->
+        <div data-role="page" data-theme="d" id="astronomytag">
+            <div data-role="header">
+                <h1>Astrolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#solarsystag"><img src="images/astro/solar-icon.png">Sistemang Pang-araw</a></li>
+                    <li><a href=""><img src="images/astro/earth.png">Daigdig</a></li>
+                    <li><a href="#moontag"><img src="images/astro/moon.png">Buwan</a></li>
+                    <li><a href="#spacetag"><img src="images/astro/astro.png">Astronota</a></li>
+                    <li><a href="#startag"><img src="images/astro/constellation.png">Bituin</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagethree" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astronomytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#astrospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- OUR SOLAR SYSTEM ENGLISH -->
+        <div data-role="page" data-theme="d" id="solarsys">
+            <div data-role="header">
+                <h1>OUR SOLAR SYSTEM</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">What is the name of the sixth planet from the sun?</h2>
+                <img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" >
+
+                <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup">
+      <legend>Choose the best answer:</legend>
+        <label for="radio1e">Pluto</label>
+        <input type="radio" name="choice" id="radio1e" value="radio1e">
+                        
+                        
+        <label for="radio2e">Neptune</label>
+        <input type="radio" name="choice" id="radio2e" value="radio2e">
+                        
+        <label for="radio3e">Saturn</label>
+        <input type="radio" name="choice" id="radio3e" value="radio3e">
+                        
+        <label for="radio4e">Earth</label>
+        <input type="radio" name="choice" id="radio4e" value="radio4e">              
+                        
+      </fieldset>
+
+                    
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#solarsys" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarsystag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+ <!-- OUR SOLAR SYSTEM Spanish -->
+        <div data-role="page" data-theme="d" id="solarspan">
+            <div data-role="header">
+                <h1>NUESTRO SISTEMA SOLAR</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">¿Cuál es el nombre del sexto planeta del sol?</h2>
+                <img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" >
+
+                <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup">
+      <legend>Elige la mejor respuesta:</legend>
+        <label for="radio1s">Plutón</label>
+        <input type="radio" name="choice" id="radio1s" value="radio1s">
+                        
+                        
+        <label for="radio2s">Neptuno</label>
+        <input type="radio" name="choice" id="radio2s" value="radio2s">
+                        
+        <label for="radio3s">Saturno</label>
+        <input type="radio" name="choice" id="radio3s" value="radio3s">
+                        
+        <label for="radio4s">Tierra</label>
+        <input type="radio" name="choice" id="radio4s" value="radio4s">              
+                        
+      </fieldset>
+
+                    
+                    <input type="button" value="Enviar">
+                    <a href="next.html" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#solarsys" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarsystag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+               
+        
+<!-- OUR SOLAR SYSTEM TAGOLOG -->
+        <div data-role="page" data-theme="d" id="solarsystag">
+            <div data-role="header">
+                <h1>Sistemang Pang-araw</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Ano ang pangalan ng ika-anim na planeta mula sa araw?</h2>
+                <img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        
+                        
+                              <legend>Piliin ang pinakamahusay na sagot:</legend>
+        <label for="radio1tag">Pluto</label>
+        <input type="radio" name="choice" id="radio1tag" value="radio1tag">
+                        
+                        
+        <label for="radio2tag">Neptuno</label>
+        <input type="radio" name="choice" id="radio2tag" value="radio2tag">
+                        
+        <label for="radio3tag">Saturno</label>
+        <input type="radio" name="choice" id="radio3tag" value="radio3tag">
+                        
+        <label for="radio4tag">Daigdig</label>
+        <input type="radio" name="choice" id="radio4tag" value="radio4tag">              
+                        
+      </fieldset>
+
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#solarsys" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarsystag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#solarspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+<!-- PHASES OF THE MOON ENGLISH -->
+        <div data-role="page" data-theme="d" id="moon">
+            <div data-role="header">
+                <h1>PHASES OF THE MOON</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Name the phases of moon.</h2>
+                <!--<img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" > -->
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                       <!-- <legend>Choose the best answer: </legend> -->
+                            
+                             <img src="images/moon/1.jpg" class="picture">
+                        <input type="text" name="moon-a" id="moon-a" class="moon-in">
+                            
+                        
+                             <img src="images/moon/2.jpg" class="picture">
+                        <input type="text" name="moon-b" id="moon-b" class="moon-in" >
+                        
+                            
+                             <img src="images/moon/3.jpg" class="picture">
+                        <input type="text" name="moon-c" id="moon-c" class="moon-in">
+                        
+                            
+                             <img src="images/moon/4.jpg" class="picture">
+                        <input type="text" name="moon-d" id="moon-d" class="moon-in">
+                    </fieldset>
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#moon" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moontag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moonspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- PHASES OF THE MOON SPANISH -->
+        <div data-role="page" data-theme="d" id="moonspan">
+            <div data-role="header">
+                <h1>FASES DE LA LUNA</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Nombre las fases de la luna.</h2>
+                <!--<img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" > -->
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                       <!-- <legend>Choose the best answer: </legend> -->
+                            
+                             <img src="images/moon/1.jpg" class="picture">
+                        <input type="text" name="moon-a" id="moon-a" class="moon-in">
+                            
+                        
+                             <img src="images/moon/2.jpg" class="picture">
+                        <input type="text" name="moon-b" id="moon-b" class="moon-in" >
+                        
+                            
+                             <img src="images/moon/3.jpg" class="picture">
+                        <input type="text" name="moon-c" id="moon-c" class="moon-in">
+                        
+                            
+                             <img src="images/moon/4.jpg" class="picture">
+                        <input type="text" name="moon-d" id="moon-d" class="moon-in">
+                    </fieldset>
+                    <input type="button" value="Enviar">
+                    <a href="next.html" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#moon" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moontag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moonspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div> 
+        
+        
+<!-- PHASES OF THE MOON TAGALOG -->
+        <div data-role="page" data-theme="d" id="moontag">
+            <div data-role="header">
+                <h1>ANG BUWAN</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Pangalanan ang phases ng buwan.</h2>
+                <!--<img src="images/astro/solarsystemfull.jpg" width="50%" height="50%" class="picture" > -->
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                       <!-- <legend>Choose the best answer: </legend> -->
+                            
+                             <img src="images/moon/1.jpg" class="picture">
+                        <input type="text" name="moon-atag" id="moon-atag" class="moon-in">
+                            
+                        
+                             <img src="images/moon/2.jpg" class="picture">
+                        <input type="text" name="moon-btag" id="moon-btag" class="moon-in" >
+                        
+                            
+                             <img src="images/moon/3.jpg" class="picture">
+                        <input type="text" name="moon-ctag" id="moon-ctag" class="moon-in">
+                        
+                            
+                             <img src="images/moon/4.jpg" class="picture">
+                        <input type="text" name="moon-dtag" id="moon-dtag" class="moon-in">
+                    </fieldset>
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#moon" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moontag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#moonspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+<!-- SPACE STATION ENGLISH -->
+        <div data-role="page" data-theme="d" id="spacestation">
+            <div data-role="header">
+                <h1>LIFE IN A SPACE STATION</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Watch the video and answer the following questions.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/VE76Qc6HoUc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	<legend>How often do the astronauts go around the earth while they are in orbit?</legend>
+     	<input type="radio" name="radio-choice-1e" id="radio-choice-1e" value="choice-1e" checked="checked" />
+     	<label for="radio-choice-1e">Every 3 hours</label>
+
+     	<input type="radio" name="radio-choice-1e" id="radio-choice-2e" value="choice-2e"  />
+     	<label for="radio-choice-2e">Every 90 mins</label>
+
+     	<input type="radio" name="radio-choice-1e" id="radio-choice-3e" value="choice-3e"  />
+     	<label for="radio-choice-3e">Every 24 hours</label>
+
+     	<input type="radio" name="radio-choice-1e" id="radio-choice-4e" value="choice-4e"  />
+     	<label for="radio-choice-4e">Every 6 months</label>
+</fieldset>
+                    
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#spacestation" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacetag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacespan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- SPACE STATION SPANISH -->
+        <div data-role="page" data-theme="d" id="spacespan">
+            <div data-role="header">
+                <h1>LA VIDA EN UNA ESTACIÓN ESPACIAL</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Vea el video y conteste las siguientes preguntas.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/VE76Qc6HoUc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	                   <legend>¿Con qué frecuencia los astronautas recorren la Tierra mientras están en órbita?</legend>
+     	                      <input type="radio" name="radio-choice-1s" id="radio-choice-1s" value="choice-1s" checked="checked" />
+     	                      <label for="radio-choice-1s">Cada 3 horas</label>
+
+     	                      <input type="radio" name="radio-choice-1s" id="radio-choice-2s" value="choice-2s"  />
+     	                      <label for="radio-choice-2s">Cada 90 minutos</label>
+
+     	                      <input type="radio" name="radio-choice-1s" id="radio-choice-3s" value="choice-3s"  />
+     	                      <label for="radio-choice-3s">Cada 24 horas</label>
+
+     	                      <input type="radio" name="radio-choice-1s" id="radio-choice-4s" value="choice-4s"  />
+     	                      <label for="radio-choice-4s">Cada 6 meses</label>
+                    </fieldset>
+                    
+                    <input type="button" value="Enviar">
+                    <a href="next.html" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#spacestation" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacetag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacespan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+<!-- SPACE STATION TAGALOG -->
+        <div data-role="page" data-theme="d" id="spacetag">
+            <div data-role="header">
+                <h1>Buhay sa space himpilan</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Panoorin ang video at sagutin ang sumusunod na mga tanong.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/VE76Qc6HoUc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	<legend>Gaano ka kadalas na ang astronauts pumunta sa paligid ng lupa habang sila ay nasa orbit?</legend>
+     	<input type="radio" name="radio-choice-1t" id="radio-choice-1t" value="choice-1t" checked="checked" />
+     	<label for="radio-choice-1t">Bawat 3 oras</label>
+
+     	<input type="radio" name="radio-choice-2t" id="radio-choice-2t" value="choice-2t"  />
+     	<label for="radio-choice-2t">Bawat 90 minuto</label>
+
+     	<input type="radio" name="radio-choice-3t" id="radio-choice-3t" value="choice-3t"  />
+     	<label for="radio-choice-3t">Bawat 24 oras</label>
+
+     	<input type="radio" name="radio-choice-4t" id="radio-choice-4t" value="choice-4t"  />
+     	<label for="radio-choice-4t">Tuwing 6 na buwan</label>
+</fieldset>
+                    
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#spacestation" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacetag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#spacespan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+    
+<!-- CONSTELLATIONS ENGLISH -->
+        <div data-role="page" data-theme="d" id="stars">
+            <div data-role="header">
+                <h1>CONSTELLATIONS</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Watch the video and answer the following questions.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/1sZ15SUeS9w" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	<legend>According to the video, what is the name of the most famous group of stars in the Northern Hemisphere?</legend>
+     	<input type="text" name="stars1" id="stars1" />
+
+</fieldset>
+                    
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#stars" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#startag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#starspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- CONSTELLATIONS SPANISH -->
+        <div data-role="page" data-theme="d" id="starspan">
+            <div data-role="header">
+                <h1>CONSTELACIONES</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Vea el video y conteste las siguientes preguntas.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/1sZ15SUeS9w" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	<legend>Según el video, ¿cuál es el nombre del grupo más famoso de estrellas en el Hemisferio Norte?</legend>
+     	<input type="text" name="stars1" id="stars1" />
+
+</fieldset>
+                    
+                    <input type="button" value="Enviar">
+                    <a href="next.html" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#stars" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#startag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#starspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>        
+
+<!-- CONSTELLATIONS TAGALOG -->
+        <div data-role="page" data-theme="d" id="startag">
+            <div data-role="header">
+                <h1>Konstelasyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Panoorin ang video at sagutin ang sumusunod na mga tanong.</h2>
+                
+                <center>
+                    <div class="wrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/1sZ15SUeS9w" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </center>
+                <div data-role="fieldcontain">
+                    
+                    <fieldset data-role="controlgroup">
+	<legend>Ayon sa video, ano ang pangalan ng mga pinaka sikat na grupo ng mga bituin sa Northern hating-globo?</legend>
+     	<input type="text" name="stars1" id="stars1" />
+
+</fieldset>
+                    
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#stars" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#startag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#starspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- NAME THAT RXN ENGLISH -->
+        <div data-role="page" data-theme="d" id="rxneng">
+            <div data-role="header">
+                <h1>Name that Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">What is this reaction called?</h2>
+                <img src="images/orgorxn/grignard.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Check all that applies: </legend>
+                            <input type="checkbox" name="checkbox-1c" id="checkbox-1c" class="rxntag">
+                            <label for="checkbox-1c">Grignard Reaction</label>
+                            
+                            <input type="checkbox" name="checkbox-2c" id="checkbox-2c" class="rxntag">
+                            <label for="checkbox-2c">Geward Reaction</label>
+                        
+                            <input type="checkbox" name="checkbox-3c" id="checkbox-3c" class="rxntag">
+                            <label for="checkbox-3c">Grubbs Reaction</label>
+                        
+                            <input type="checkbox" name="checkbox-4c" id="checkbox-4c" class="rxntag">
+                            <label for="checkbox-4c">Heck Reaction</label>
+                    </fieldset>
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#rxneng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxntag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxnspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- NAME THAT RXN SPANISH -->
+        <div data-role="page" data-theme="d" id="rxnspan">
+            <div data-role="header">
+                <h1>Denomina esa reacción</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">¿Cómo se llama esta reacción?</h2>
+                <img src="images/orgorxn/grignard.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Marque todo lo que corresponda: </legend>
+                            <input type="checkbox" name="checkbox-1c" id="checkbox-1c" class="rxntag">
+                            <label for="checkbox-1c">Grignard Reacción</label>
+                            
+                            <input type="checkbox" name="checkbox-2c" id="checkbox-2c" class="rxntag">
+                            <label for="checkbox-2c">Geward Reacción</label>
+                        
+                            <input type="checkbox" name="checkbox-3c" id="checkbox-3c" class="rxntag">
+                            <label for="checkbox-3c">Grubbs Reacción</label>
+                        
+                            <input type="checkbox" name="checkbox-4c" id="checkbox-4c" class="rxntag">
+                            <label for="checkbox-4c">Heck Reacción</label>
+                    </fieldset>
+                    <input type="button" value="Enviar">
+                    <a href="next.html" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#rxneng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxntag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxnspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- ALKENE ENGLIGH -->
+        <div data-role="page" data-theme="d" id="alkeng">
+            <div data-role="header">
+                <h1>Alkene Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Bromination of Alkene</h2>
+                <img src="images/orgorxn/Bromination/Bromination.png" width="50%" height="50%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Step 1</h3>
+                    <p>Polarisation of the bromine molecule</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 2</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 3</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Next Reaction">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alktag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+<!-- ALKENE SPANISH -->
+        <div data-role="page" data-theme="d" id="alkspan">
+            <div data-role="header">
+                <h1>Alkene Reacción</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Bromación de Alkene</h2>
+                <img src="images/orgorxn/Bromination/Bromination.png" width="50%" height="50%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Paso 1</h3>
+                    <p>Polarización de la molécula de bromo</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Paso 2</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Paso 3</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Next Reaction">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alktag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div> 
+        
+        
+        
+<!-- Alkyne RXN -->
+        <div data-role="page" data-theme="d" id="alkyneeng">
+            <div data-role="header">
+                <h1>Alkyne Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Halogenation of Alkyne</h2>
+                <img src="images/orgorxn/halogenation/halogenation.png" width="80%" height="80%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Step 1</h3>
+                    <p><img src="images/orgorxn/halogenation/step1.png" width="80%" height="80%"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 2</h3>
+                    <p><img src="images/orgorxn/halogenation/step2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 3</h3>
+                    <p><img src="images/orgorxn/halogenation/step3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Next Reaction">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkyneeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkyspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- Alkyne RXN SPANISH -->
+        <div data-role="page" data-theme="d" id="alkyspan">
+            <div data-role="header">
+                <h1>Reacción Alquílica</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Halogenación de Alquino</h2>
+                <img src="images/orgorxn/halogenation/halogenation.png" width="80%" height="80%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Paso 1</h3>
+                    <p><img src="images/orgorxn/halogenation/step1.png" width="80%" height="80%"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Paso 2</h3>
+                    <p><img src="images/orgorxn/halogenation/step2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Paso 3</h3>
+                    <p><img src="images/orgorxn/halogenation/step3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Próxima Reacción">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkyneeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkyspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>        
+        
+        
+<!-- PHYSIO ENGLISH PAGE-->       
+        <div data-role="page" data-theme="d" id="physiology">
+            <div data-role="header">
+                <h1>Physiology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#nervous"><img src="images/physiologyicons/nervous.png">Nervous System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/digest.png">Digestive System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/circ.png">Circulatory System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/ear.png">Auditory System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/eye.png">Human Eye</a></li>
+                    <li><a href=""><img src="images/physiologyicons/antibody.png">Immune System</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#physiology" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physiotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physpan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- PHYSIO SPANISH PAGE-->       
+        <div data-role="page" data-theme="d" id="physpan">
+            <div data-role="header">
+                <h1>Fisiología</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#nervous"><img src="images/physiologyicons/nervous.png">Sistema nervioso</a></li>
+                    <li><a href=""><img src="images/physiologyicons/digest.png">Sistema digestivo</a></li>
+                    <li><a href=""><img src="images/physiologyicons/circ.png">Sistema circulatorio</a></li>
+                    <li><a href=""><img src="images/physiologyicons/ear.png">Sistema auditivo</a></li>
+                    <li><a href=""><img src="images/physiologyicons/eye.png">Ojo humano</a></li>
+                    <li><a href=""><img src="images/physiologyicons/antibody.png">Sistema inmune</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#physiology" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physiotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physpan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+ <!-- GENETICS ENGLISH PAGE -->       
+        <div data-role="page" data-theme="d" id="genetics">
+            <div data-role="header">
+                <h1>Genetics</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/genetics/genconcept.png">Genetic Concepts</a></li>
+                    <li><a href=""><img src="images/genetics/mendal.png">Mendel's Law</a></li>
+                    <li><a href=""><img src="images/genetics/xy.jpg">Sex Chromosomes</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#genetics" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#gentag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#genspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+ <!-- GENETICS SPANISH PAGE -->       
+        <div data-role="page" data-theme="d" id="genspan">
+            <div data-role="header">
+                <h1>Genetics</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/genetics/genconcept.png">Conceptos Genéticos</a></li>
+                    <li><a href=""><img src="images/genetics/mendal.png">Ley de Mendel</a></li>
+                    <li><a href=""><img src="images/genetics/xy.jpg">Cromosomas Sexuales</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#genetics" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#gentag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#genspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>    
+        
+        
+<!-- GENEITCS TAG PAGE-->
+        <div data-role="page" data-theme="d" id="gentag">
+            <div data-role="header">
+                <h1>Genetika</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/genetics/genconcept.png">Genetika Konsepto</a></li>
+                    <li><a href=""><img src="images/genetics/mendal.png">Mendel's Batas</a></li>
+                    <li><a href=""><img src="images/genetics/xy.jpg">Seka Kromosoma</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#genetics" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#gentag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#genspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+        
+<!-- CELL BIO ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="cellbio">
+            <div data-role="header">
+                <h1>Cell Biology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/cellstrut/cellstrut.gif">Cell Structure</a></li>
+                    <li><a href=""><img src="images/cellstrut/cellwall.JPG">Cell Membrane</a></li>
+                    <li><a href=""><img src="images/cellstrut/photo.png">Photosynthesis</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#cellbio" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#celltag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#cellspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- CELL BIO SPANISH PAGE -->
+        <div data-role="page" data-theme="d" id="cellspan">
+            <div data-role="header">
+                <h1>Biología Celular</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/cellstrut/cellstrut.gif">Estructura celular</a></li>
+                    <li><a href=""><img src="images/cellstrut/cellwall.JPG">Membrana celular</a></li>
+                    <li><a href=""><img src="images/cellstrut/photo.png">Fotosíntesis</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#cellbio" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#celltag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#cellspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>   
+        
+        
+<!-- Cell Bio Tag Page -->
+        <div data-role="page" data-theme="d" id="celltag">
+            <div data-role="header">
+                <h1>Selda Byolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/cellstrut/cellstrut.gif">Selda Kaayusan</a></li>
+                    <li><a href=""><img src="images/cellstrut/cellwall.JPG">Selda Lamad</a></li>
+                    <li><a href=""><img src="images/cellstrut/photo.png">Potosintesis</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#cellbio" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#celltag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#cellspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- MICROBIOLOGY ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="micro">
+            <div data-role="header">
+                <h1>Microbiology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/micro/bacteria.png">Bacteria</a></li>
+                    <li><a href=""><img src="images/micro/protists.jpg">Protists</a></li>
+                    <li><a href=""><img src="images/micro/fungi.png">Fungi</a></li>
+                    <li><a href=""><img src="images/micro/vir.ico">Virus</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#micro" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+ 
+<!-- MICROBIOLOGY SPANISH PAGE -->
+        <div data-role="page" data-theme="d" id="microspan">
+            <div data-role="header">
+                <h1>Microbiología</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/micro/bacteria.png">Bacterias</a></li>
+                    <li><a href=""><img src="images/micro/protists.jpg">Protistas</a></li>
+                    <li><a href=""><img src="images/micro/fungi.png">Hongos</a></li>
+                    <li><a href=""><img src="images/micro/vir.ico">Virus</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#micro" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+<!-- MICRO TAG PAGE-->
+        <div data-role="page" data-theme="d" id="microtag">
+            <div data-role="header">
+                <h1>Mikrobiyolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/micro/bacteria.png">Bakterya</a></li>
+                    <li><a href=""><img src="images/micro/protists.jpg">Protists</a></li>
+                    <li><a href=""><img src="images/micro/fungi.png">Fungi</a></li>
+                    <li><a href=""><img src="images/micro/vir.ico">Virus</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#micro" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+        
+        
+ <!-- NERVOUS SYSTEM ENGLISH PAGE-->       
+       
+        <div data-role="page" data-theme="d" id="nervous">
+            <div data-role="header">
+                <h1>Nervous System</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                        <li><a href="#pagethree" data-icon="grid" data-transition = "fade">Astronomy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">What are the three main parts into which a neuron can be divided?</h2>
+                <img src="images/physiologyicons/nervoussystem/Neurona.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Check all that applies: </legend>
+                            <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+                            <label for="checkbox-1a">Dendrites</label>
+                            
+                            <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom">
+                            <label for="checkbox-2a">Cell body</label>
+                        
+                            <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom">
+                            <label for="checkbox-3a">Axon</label>
+                        
+                            <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom">
+                            <label for="checkbox-4a">Plasma Membrane</label>
+                    </fieldset>
+                    <input type="button" value="Submit">
+                    <a href="" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#nervous" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- NERVOUS SYSTEM SPANISH PAGE-->       
+       
+        <div data-role="page" data-theme="d" id="nervspan">
+            <div data-role="header">
+                <h1>Sistema nervioso</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biospan" data-icon="grid" data-transition ="fade">Biología</a></li>
+                        <li><a href="#chemspan" data-icon="grid" data-transition = "fade">Química</a></li>
+                        <li><a href="#astrospan" data-icon="grid" data-transition = "fade">Astronomía</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">¿Cuáles son las tres partes principales en las que se puede dividir una neurona?</h2>
+                <img src="images/physiologyicons/nervoussystem/Neurona.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Marque todo lo que corresponda:</legend>
+                            <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+                            <label for="checkbox-1a">Dendritas</label>
+                            
+                            <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom">
+                            <label for="checkbox-2a">Cuerpo de la célula</label>
+                        
+                            <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom">
+                            <label for="checkbox-3a">Axon</label>
+                        
+                            <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom">
+                            <label for="checkbox-4a">Membrana de plasma</label>
+                    </fieldset>
+                    <input type="button" value="Enviar">
+                    <a href="" data-role="button">Siguiente</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#nervous" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+        
+        
+        
+<!-- BIOLOGY TAGALOG PAGE-->       
+        <div data-role="page" data-theme="d" id="biotag">
+            <div data-role="header">
+                <h1>Byolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid"> Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                <li><a href="#physiotag"><img src="images/Grad_Physiology_Icon.png">Pisyolohiya</a></li>
+                <li><a href="#gentag"><img src="images/Biochemistry-512.png">Genetika</a></li>
+                <li><a href="#celltag"><img src="images/Human_Cell-512.png">Selda Byolohiya</a></li>
+                <li><a href="#microtag"><img src="images/microscope-512.png">Mikrobiyolohiya</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pageone" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biospan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- PHYSIO TAG -->
+        
+        <div data-role="page" data-theme="d" id="physiotag">
+            <div data-role="header">
+                <h1>Pisyolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                        
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#nervtag"><img src="images/physiologyicons/nervous.png">Kinakabahan Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/digest.png">Ng Pagtunaw Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/circ.png">Gumagala Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/ear.png">Pandinig Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/eye.png">Pantao Mata</a></li>
+                    <li><a href=""><img src="images/physiologyicons/antibody.png">May kabal Sistema</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#physiology" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physiotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physpan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+ <!-- Nervous tag -->
+        <div data-role="page" data-theme="d" id="nervtag">
+            <div data-role="header">
+                <h1>Kinakabahan Sistema</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Tatlo pangunahin bahagi ng isang neruon?</h2>
+                <img src="images/physiologyicons/nervoussystem/Neurona.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Surin ang lahat na nalalapat: </legend>
+                            <input type="checkbox" name="checkbox-1b" id="checkbox-1b" class="customtag">
+                            <label for="checkbox-1b">Dendrites</label>
+                            
+                            <input type="checkbox" name="checkbox-2b" id="checkbox-2b" class="customtag">
+                            <label for="checkbox-2b">Selda Katawan</label>
+                        
+                            <input type="checkbox" name="checkbox-3b" id="checkbox-3b" class="customtag">
+                            <label for="checkbox-3b">Axon</label>
+                        
+                            <input type="checkbox" name="checkbox-4b" id="checkbox-4b" class="customtag">
+                            <label for="checkbox-4b">Plasma Lamad</label>
+                    </fieldset>
+                    <input type="button" value="Ipasa">
+                    <a href="" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#nervous" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- Chem Tag -->
+        <div data-role="page" data-theme="d" id="chemtag">
+            <div data-role="header">
+                <h1>Kimika</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#rxntag"><img src="images/namethatrxn.png">Reaksyon</a></li>
+                    <li><a href=""><img src="images/apple-touch-icon@2.png">Pagpapalit Reaksyon</a></li>
+                    <li><a href=""><img src="images/organic-chemistry-science-education-badge-logo-512.png">Pag-aalis Reaksyon</a></li>
+                    <li><a href="#alktag"><img src="images/alkene1.jpg">Alkene Reaksyon</a></li>
+                    <li><a href="#alkytag"><img src="images/alkyne.gif">Alkyne Reaksyon</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#pagetwo" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+<!-- Name RXN Tag -->
+        <div data-role="page" data-theme="d" id="rxntag">
+            <div data-role="header">
+                <h1>Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Panagalan ito reaksyon?</h2>
+                <img src="images/orgorxn/grignard.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Surin ang lahat na nalalapat: </legend>
+                            <input type="checkbox" name="checkbox-1d" id="checkbox-1d" class="rxntag">
+                            <label for="checkbox-1d">Grignard Reaksyon</label>
+                            
+                            <input type="checkbox" name="checkbox-2d" id="checkbox-2d" class="rxntag">
+                            <label for="checkbox-2d">Geward Reaksyon</label>
+                        
+                            <input type="checkbox" name="checkbox-3d" id="checkbox-3d" class="rxntag">
+                            <label for="checkbox-3d">Grubbs Reaksyon</label>
+                        
+                            <input type="checkbox" name="checkbox-4d" id="checkbox-4d" class="rxntag">
+                            <label for="checkbox-4d">Heck Reaksyon</label>
+                    </fieldset>
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#rxneng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxntag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxnspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+<!-- Alkene Rxn tag-->
+        <div data-role="page" data-theme="d" id="alktag">
+            <div data-role="header">
+                <h1>Alkene Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Bromination ng Alkene</h2>
+                <img src="images/orgorxn/Bromination/Bromination.png" width="50%" height="50%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Hakbang 1</h3>
+                    <p>Polariseysyon ng bromine molekyul</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 2</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 3</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Susunod Reaksyon">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alktag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+
+<!-- Alkyne RXN TAg-->
+        <div data-role="page" data-theme="d" id="alkytag">
+            <div data-role="header">
+                <h1>Alkyne Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                        <li><a href="#astronomytag" data-icon="grid" data-transition = "fade">Astrolohiya</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Halogenation ng Alkyne</h2>
+                <img src="images/orgorxn/halogenation/halogenation.png" width="80%" height="80%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Hakbang 1</h3>
+                    <p><img src="images/orgorxn/halogenation/step1.png" width="80%" height="80%"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 2</h3>
+                    <p><img src="images/orgorxn/halogenation/step2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 3</h3>
+                    <p><img src="images/orgorxn/halogenation/step3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Susunod Reaksyon">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons">
+                    <a href="#alkyneeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkyspan" data-role="button" data-icon="columbiaicon" data-inline="true" class="ui-nodisc-icon"></a>
+                </p>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
