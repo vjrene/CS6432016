@@ -1,2 +1,2 @@
-# CS6432016
-Mobile Innovations for the Global World
+# JQuery Mobile/Cordova
+worked on with Tony and Debarshi
